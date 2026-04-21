@@ -3,11 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
+    <title>KAZ CREATIVE STUDIO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'onamae-blue': '#004aa6',
+              'onamae-light-blue': '#e6f0ff',
+              'onamae-navy': '#002d64',
+              'onamae-orange': '#ff9b00',
+              'onamae-bg': '#f5f7fa'
+            },
+            fontFamily: {
+              sans: ['Inter', 'Noto Sans JP', 'ui-sans-serif', 'system-ui', 'sans-serif']
+            }
+          }
+        }
+      };
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
-
