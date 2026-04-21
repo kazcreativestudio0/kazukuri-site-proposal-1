@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Noto Sans JP", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-onamae-blue: #004aa6;
+  --color-onamae-light-blue: #e6f0ff;
+  --color-onamae-navy: #002d64;
+  --color-onamae-orange: #ff9b00;
+  --color-onamae-bg: #f5f7fa;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-slate-900 antialiased;
+  }
+}
+
+@layer utilities {
+  .cta-button {
+    @apply bg-onamae-orange text-white font-black py-4 px-8 rounded-md shadow-lg hover:brightness-105 transition-all text-center flex items-center justify-center gap-2;
+  }
+  
+  .section-bg-blue {
+    @apply bg-onamae-blue text-white;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 px-6 md:px-12;
+  }
+
+  .box-shadow-onamae {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
